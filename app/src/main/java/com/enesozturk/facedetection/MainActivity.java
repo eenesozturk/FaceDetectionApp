@@ -99,8 +99,8 @@ public class MainActivity extends AppCompatActivity {
                                             info.append("Sağ Göz: ")
                                                     .append(leftEye != null ? (leftEye > 0.5 ? "Açık" : "Kapalı") : "Bilinmiyor").append("\n");
 
-                                            info.append("Ağız: ")
-                                                    .append(smileProb != null ? (smileProb > 0.5 ? "Açık" : "Kapalı") : "Bilinmiyor").append("\n");
+                                            info.append("Gülümsüyor mu: ")
+                                                    .append(smileProb != null ? (smileProb > 0.5 ? "Evet" : "Hayır") : "Bilinmiyor").append("\n");
                                         }
                                     }
                                     faceInfoText.setText(info.toString());
